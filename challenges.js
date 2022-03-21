@@ -19,20 +19,27 @@ function sayHello() {
 
 // console.log(sayHello())
 
-/*-----------------------------------------------------------------
-Challenge: 01-addOne
+// -----------------------------------------------------------------
+// Challenge: 01-addOne
 
-Difficulty: Basic
+// Difficulty: Basic
 
-Prompt:
+// Prompt:
 
-Write a function called addOne that takes a single number as an argument and returns that number plus 1.
+// Write a function called addOne that takes a single number as an argument and returns that number plus 1.
 
-Examples:
+// Examples:
+
+function addOne(num) {
+  let newNum = num;
+  newNum = newNum + 1;
+  console.log(newNum)
+  return newNum
+}
 
 addOne(1) //=> 2
 addOne(-5) //=> -4
------------------------------------------------------------------*/
+// -----------------------------------------------------------------
 // Your solution for 01-addOne here:
 
 
