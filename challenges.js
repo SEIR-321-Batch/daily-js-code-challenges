@@ -14,9 +14,11 @@ sayHello() //=> Hello!
 // Your solution for 00-sayHello (example) here:
 
 function sayHello() {
-  return 'Hello!'
+  
+  return 'Hello!';
 }
 
+console.log(sayHello())
 
 /*-----------------------------------------------------------------
 Challenge: 01-addOne
@@ -29,11 +31,15 @@ Write a function called addOne that takes a single number as an argument and ret
 
 Examples:
 
+
+
 addOne(1) //=> 2
 addOne(-5) //=> -4
 -----------------------------------------------------------------*/
 // Your solution for 01-addOne here:
-
+function addOne(num){
+  return num + 1;
+}
 
 
 
