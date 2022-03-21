@@ -16,6 +16,7 @@ sayHello() //=> Hello!
 function sayHello() {
   return 'Hello!'
 }
+console.log(sayHello());
 
 
 /*-----------------------------------------------------------------
@@ -34,10 +35,10 @@ addOne(-5) //=> -4
 -----------------------------------------------------------------*/
 // Your solution for 01-addOne here:
 function addOne(num){
-  return num++;
+  return ++num;
 
 }
-console.log(3);
+console.log(addOne(3));
 /*-----------------------------------------------------------------
 Challenge: 02-addTwoNumbers
 
