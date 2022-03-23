@@ -1,4 +1,4 @@
-/*-----------------------------------------------------------------
+   /*-----------------------------------------------------------------
 Challenge: 00-sayHello (example)
 
 Difficulty: Basic
@@ -41,7 +41,9 @@ function addOne(num){
   return num + 1;
 }
 
+console.log(addOne(1))
 
+console.log(addOne(-5))
 
 
 /*-----------------------------------------------------------------
@@ -62,6 +64,20 @@ addTwoNumbers(0, 0) //=> 0
 addTwoNumbers('Hello', 5) //=> NaN
 -----------------------------------------------------------------*/
 // Your solution for 02-addTwoNumbers here:
+function addTwoNumbers(num, num2){
+  if(typeof num === 'string' || typeof num2 === 'string'){
+      return 'Nan';
+  } else{
+      return num + num2;
+  }
+}
+
+// Test code
+
+console.log(addTwoNumbers(1,2))
+
+console.log(addTwoNumbers("Something",1))
+
 
 
 
@@ -86,6 +102,11 @@ sumNumbers([]) //=> 0
 -----------------------------------------------------------------*/
 // Your solution for 03-sumNumbers here:
 
+function sumNUmbers(arr){
+  let arr = [];
+
+
+}
 
 
 
