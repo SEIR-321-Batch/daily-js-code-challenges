@@ -56,9 +56,15 @@ addTwoNumbers('Hello', 5) //=> NaN
 -----------------------------------------------------------------*/
 // Your solution for 02-addTwoNumbers here:
 
-
-
-
+function addTwoNumbers(num1, num2) {
+  num3 = num1 + num2;
+  if (isNaN(num3)) {
+    return NaN;
+  }
+  else {
+    return num3
+  }
+}
 
 /*-----------------------------------------------------------------
 Challenge: 03-sumNumbers
@@ -79,9 +85,18 @@ sumNumbers([]) //=> 0
 -----------------------------------------------------------------*/
 // Your solution for 03-sumNumbers here:
 
-
-
-
+function sumNumbers(anArray) {
+  if (anArray.length === 0) {
+    return 0;
+  }
+  else {
+    let sumArray = 0;
+    for (let i = 0; i < (anArray.length - 1); i++) {
+      sumArray = sumArray + anArray[i];
+    }
+    return sumArray;
+  }
+}
 
 /*-----------------------------------------------------------------
 Challenge: 04-addList
@@ -806,5 +821,3 @@ totalTaskTime( [2, 2, 3, 3, 4, 4], 2 ) //=> 9
 totalTaskTime( [5, 2, 6, 8, 7, 2], 3 ) // => 12
 -----------------------------------------------------------------*/
 // Your solution for 30- here:
-
-
