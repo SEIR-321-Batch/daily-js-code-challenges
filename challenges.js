@@ -91,7 +91,7 @@ function sumNumbers(anArray) {
   }
   else {
     let sumArray = 0;
-    for (let i = 0; i < (anArray.length - 1); i++) {
+    for (let i = 0; i < anArray.length; i++) {
       sumArray = sumArray + anArray[i];
     }
     return sumArray;
