@@ -1,4 +1,4 @@
-/*-----------------------------------------------------------------
+   /*-----------------------------------------------------------------
 Challenge: 00-sayHello (example)
 
 Difficulty: Basic
@@ -14,9 +14,11 @@ sayHello() //=> Hello!
 // Your solution for 00-sayHello (example) here:
 
 function sayHello() {
-  return 'Hello!'
+  
+  return 'Hello!';
 }
 
+console.log(sayHello())
 
 /*-----------------------------------------------------------------
 Challenge: 01-addOne
@@ -29,13 +31,19 @@ Write a function called addOne that takes a single number as an argument and ret
 
 Examples:
 
+
+
 addOne(1) //=> 2
 addOne(-5) //=> -4
 -----------------------------------------------------------------*/
 // Your solution for 01-addOne here:
+function addOne(num){
+  return num + 1;
+}
 
+console.log(addOne(1))
 
-
+console.log(addOne(-5))
 
 
 /*-----------------------------------------------------------------
@@ -56,6 +64,20 @@ addTwoNumbers(0, 0) //=> 0
 addTwoNumbers('Hello', 5) //=> NaN
 -----------------------------------------------------------------*/
 // Your solution for 02-addTwoNumbers here:
+function addTwoNumbers(num, num2){
+  if(typeof num === 'string' || typeof num2 === 'string'){
+      return 'Nan';
+  } else{
+      return num + num2;
+  }
+}
+
+// Test code
+
+console.log(addTwoNumbers(1,2))
+
+console.log(addTwoNumbers("Something",1))
+
 
 
 
@@ -80,6 +102,11 @@ sumNumbers([]) //=> 0
 -----------------------------------------------------------------*/
 // Your solution for 03-sumNumbers here:
 
+function sumNUmbers(arr){
+  let arr = [];
+
+
+}
 
 
 
