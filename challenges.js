@@ -194,9 +194,9 @@ reverseUpcaseString("SEI Rocks!"); //=> "!SKCOR IES"
 
 function reverseUpcaseString(string) {
   string = string.toUpperCase();
-  let arr = string.split("");
+  let arr = string.split('');
   arr = arr.reverse();
-  string = arr.join("");
+  string = arr.join('');
   return string;
 }
 
@@ -217,9 +217,13 @@ removeEnds('a'); //=> "" (empty string)
 -----------------------------------------------------------------*/
 // Your solution for 08-removeEnds here:
 
-
-
-
+function removeEnds(string) {
+  let arr = string.split('');
+  arr.pop();
+  arr.shift();
+  string = arr.join('');
+  return string
+}
 
 /*-----------------------------------------------------------------
 Challenge: 09-charCount
