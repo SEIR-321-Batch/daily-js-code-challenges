@@ -245,23 +245,18 @@ charCount('Today is fantastic!') //=> { T: 1, o: 1, d: 1, a: 3, y: 1, ' ': 2, i:
 // Your solution for 09-charCount here:
 
 function charCount(string) {
-  let arr = string.split('');
-  let object = {}
+  let arr = string.split('')
+  const object = {}
+  arr.forEach(character => object[character] = 1)
   
-  for (let i = 0; arr.length > 0; i++) {
-    let char = arr[i]
-    object[char] = 1;
-    arr.splice(i, 1);
-    console.log(char)
-    }
+  arr = arr.sort();
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === arr[i - 1]) object[arr[i]]++
+  }
   
   return object;
 }
-
-console.log(charCount('hhello'))
-
-
-
 
 /*-----------------------------------------------------------------
 Challenge: 10-formatWithPadding
